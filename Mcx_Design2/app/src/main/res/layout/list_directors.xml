@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:id="@+id/director"
+        android:src="@drawable/ic_director1"
+        android:layout_below="@id/text2"
+        android:layout_marginTop="10dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/director_name"
+        android:text="Mr. Satyananda Mishra,IAS (Retd.)"
+        android:layout_marginLeft="10dp"
+        android:textColor="#de7a49"
+        android:layout_alignTop="@+id/director"
+        android:layout_toEndOf="@+id/director"
+        android:layout_marginTop="22dp"
+        android:fontFamily="RalewayMedium"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/director_details"
+        android:text="Chairman, Independent Director, FMC Approved (Erstwhile Regulator)"
+        android:layout_below="@+id/director_name"
+        android:layout_alignStart="@+id/director_name"
+        android:layout_marginTop="5dp"
+        android:fontFamily="RalewayMedium"/>
+
+
+
+
+</RelativeLayout>

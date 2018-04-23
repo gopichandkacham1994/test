@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="mcxf_androidcom.com.mcx_android">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:name=".AppController"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_mcx"
+        android:label=""
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".MainMarketWatch.MainActivity"
+            android:label=""
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".MarketWatch.MarketWatch_Details"
+            android:label="@string/title_activity_market_watch_details"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainMarketWatch.MainActivity" />
+
+            <intent-filter>
+                <action android:name=".MarketWatch.MarketWatch_Details" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".SplashActivity"
+            android:label="">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Top_Gainers.TopGainers"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainMarketWatch.MainActivity" />
+
+            <intent-filter>
+                <action android:name=".Top_Gainers.TopGainers" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Top_Losers.Top_Losers"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainMarketWatch.MainActivity" />
+
+            <intent-filter>
+                <action android:name=".Top_Losers.Top_Losers" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".BhavCopy.BhavCopy_Details"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainMarketWatch.MainActivity" />
+
+            <intent-filter>
+                <action android:name=".BhavCopy.BhavCopy_Details" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ScriptDet.Scriptdet_Details"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainMarketWatch.MainActivity" />
+
+            <intent-filter>
+                <action android:name="mcxf_androidcom.com.mcx_android.ScriptDet.Scriptdet_Details" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ScriptMas.Scriptmas_Details"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainMarketWatch.MainActivity" />
+
+            <intent-filter>
+                <action android:name="mcxf_androidcom.com.mcx_android.ScriptMas.Scriptmas_Details" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".AboutUs"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainMarketWatch.MainActivity" />
+
+            <intent-filter>
+                <action android:name="mcxf_androidcom.com.mcx_android.AboutUs" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ContactUs"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainMarketWatch.MainActivity" />
+
+            <intent-filter>
+                <action android:name="mcxf_androidcom.com.mcx_android.ContactUs" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".MostActiveContractsValue.MostActiveContractsValue_Details"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainMarketWatch.MainActivity" />
+
+            <intent-filter>
+                <action android:name="mcxf_androidcom.com.mcx_android.MostActiveContractsValue.MostActiveContractsValue_Details" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".MostActiveContractVolume.MostActivityVolume_Details"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainMarketWatch.MainActivity" />
+
+            <intent-filter>
+                <action android:name="mcxf_androidcom.com.mcx_android.MostActiveContractVolume.MostActivityVolume_Details" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Graph.BarGraphActivity">
+            <intent-filter>
+                <action android:name="mcxf_androidcom.com.mcx_android.Graph.BarGraphActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Graph.SampleDynamicGraph">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainMarketWatch.MainActivity" />
+
+            <intent-filter>
+                <action android:name="mcxf_androidcom.com.mcx_android.Graph.SampleDynamicGraph" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".MainMarketWatch$MainMarketWatch_List" />
+        <activity
+            android:name=".Graph.LinechartActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainMarketWatch.MainActivity" />
+
+            <intent-filter>
+                <action android:name="mcxf_androidcom.com.mcx_android.Graph.LinechartActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Graph.LineChart1"
+            android:label="@string/title_activity_line_chart1"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainMarketWatch.MainActivity" />
+
+            <intent-filter>
+                <action android:name="mcxf_androidcom.com.mcx_android.Graph.LineChart1" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".GraphFragment.GraphActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainMarketWatch.MainActivity" />
+
+            <intent-filter>
+                <action android:name="mcxf_androidcom.com.mcx_android.GraphFragment.GraphActivity"/>
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+
+        </activity>
+    </application>
+
+</manifest>

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="mcxf_androidcom.com.mcx_android.GraphFragment.GraphActivity"
+    tools:showIn="@layout/activity_graph"
+    android:background="@drawable/graph_border">
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/relative"
+    android:paddingLeft="0.5dp"
+    android:paddingRight="0.5dp">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:id="@+id/commoditylist"
+        android:textSize="20sp"
+        android:background="@color/Header"
+        android:textColor="#ffff"
+        android:paddingStart="5dp"
+        android:paddingTop="10dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:text="Graph"/>
+
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:id="@+id/spinner"
+        android:layout_toEndOf="@id/commoditylist"
+        android:entries="@array/Graphs"
+        android:background="@color/Header"
+        android:paddingStart="150dp"
+        android:popupBackground="#0066a3"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true">
+
+    </Spinner>
+
+</RelativeLayout>
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingRight="0.5dp"
+        android:paddingLeft="0.5dp"
+        android:id="@+id/frag_container"
+        android:layout_below="@+id/relative">
+
+    </FrameLayout>
+
+</RelativeLayout>

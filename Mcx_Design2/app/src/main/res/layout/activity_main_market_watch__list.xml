@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="mcxf_androidcom.com.mcx_android.MainMarketWatch.MainMarketWatch_List">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/scrollView">
+            <TableLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:stretchColumns="*"
+                android:id="@+id/tablelayout">
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/tablerow1">
+
+                    <TextView
+                        android:layout_width="70dp"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/Product"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:textColor="#ffff"
+                        android:paddingStart="5dp"
+                        android:layout_weight="1"
+                        android:gravity="left"/>
+
+                    <TextView
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/LTP"
+                        android:layout_weight="1"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:gravity="right"/>
+                    <TextView
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:textColor="#ffff"
+                        android:paddingEnd="30dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:gravity="right"
+                        android:id="@+id/PCP" />
+
+
+                    <TextView
+                        android:layout_width="110dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:textColor="#ffff"
+                        android:id="@+id/Value"
+                        android:gravity="right"/>
+
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/tablerow2">
+
+                    <TextView
+                        android:layout_width="90dp"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/Expiry"
+                        android:textColor="#ffff"
+                        android:layout_marginBottom="10dp"
+                        android:paddingStart="5dp"
+                        android:gravity="left" />
+
+
+                    <TextView
+                        android:layout_width="90dp"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/Change"
+                        android:textColor="#ffff"
+                        android:paddingEnd="13dp"
+                        android:layout_marginBottom="10dp"
+                        android:gravity="right" />
+
+                    <TextView
+                        android:layout_width="140dp"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/PercentageChange"
+                        android:layout_weight="1"
+                        android:layout_marginBottom="10dp"
+                        android:paddingEnd="15dp"
+                        android:gravity="right"/>
+
+                    <TextView
+                        android:layout_width="60dp"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/PQU"
+                        android:textColor="#ffff"
+                        android:layout_weight="1"
+                        android:layout_marginBottom="10dp"
+                        android:gravity="right"/>
+
+                    <TextView
+                        android:layout_width="80dp"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/QL"
+                        android:textColor="#ffff"
+                        android:layout_weight="1"
+                        android:layout_marginBottom="10dp"
+                        android:gravity="left"/>
+
+                    </TableRow>
+            </TableLayout>
+
+
+
+    </ScrollView>
+
+</RelativeLayout>

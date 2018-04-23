@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="mcxf_androidcom.com.mcx_android.ContactUs"
+    tools:showIn="@layout/activity_contact_us">
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="130dp"
+        android:id="@+id/mcx_image"
+        android:src="@drawable/mcx_office"
+        android:layout_centerHorizontal="true"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/heading"
+        android:layout_below="@+id/mcx_image"
+        android:layout_marginTop="20dp"
+        android:text="Registered &amp; Corporate Office"
+        android:layout_centerHorizontal="true"
+        android:textStyle="bold"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/heading1"
+        android:text="Multi Commodity Exchange of India Ltd."
+        android:layout_below="@+id/heading"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:textStyle="bold"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/heading2"
+        android:text="CTS No. 255"
+        android:layout_below="@+id/heading1"
+        android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true"
+        android:textStyle="bold"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/heading3"
+        android:text="Exchange Square,"
+        android:layout_below="@+id/heading2"
+        android:layout_centerHorizontal="true"
+        android:textStyle="bold"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/heading4"
+        android:text="Suren Road, Andheri East,"
+        android:layout_below="@+id/heading3"
+        android:layout_centerHorizontal="true"
+        android:textStyle="bold"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/heading5"
+        android:text="Mumbai – 400093, India."
+        android:layout_below="@+id/heading4"
+        android:layout_centerHorizontal="true"
+        android:textStyle="bold"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="022-6731 8888"
+        android:layout_centerHorizontal="true"
+        android:textStyle="bold"
+        android:id="@+id/heading6"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/heading5"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="022-6649 4000"
+        android:layout_centerHorizontal="true"
+        android:textStyle="bold"
+        android:id="@+id/heading7"
+        android:layout_below="@+id/heading6"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/heading8"
+        android:text="022-6649 4151"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/heading7"
+        android:layout_centerHorizontal="true"
+        android:textStyle="bold"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/heading9"
+        android:layout_marginTop="10dp"
+        android:text="info@mcxindia.com"
+        android:layout_below="@+id/heading8"
+        android:layout_centerHorizontal="true"
+        android:textStyle="bold"/>
+</RelativeLayout>

@@ -1,0 +1,373 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+          <ImageView
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:id="@+id/maktwatch"
+              android:src="@drawable/ic_marketwatch"
+              android:layout_marginTop="20dp"
+              android:onClick="MarketWatch"/>
+
+
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Product Details"
+        android:layout_alignStart="@+id/maktwatch"
+        android:layout_marginTop="30dp"
+        android:onClick="MarketWatch"
+        android:id="@+id/MarketWatch"
+        android:textColor="#0d3481"
+        android:layout_marginLeft="10dp"
+        android:textSize="20dp" />
+
+        </TableRow>
+
+        <ImageView
+            android:id="@+id/divider"
+            android:layout_width="wrap_content"
+            android:layout_height="1dp"
+            android:layout_marginTop="2dp"
+            android:layout_marginBottom="1dp"
+            android:background="@color/Header"
+            />
+
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/macvalueimg"
+        android:background="@drawable/ic_value"
+        android:layout_below="@+id/maktwatch"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="MAC Value"
+        android:layout_alignLeft="@+id/macvalueimg"
+        android:layout_marginLeft="10dp"
+        android:layout_below="@+id/MarketWatch"
+        android:layout_marginTop="28dp"
+        android:onClick="MarketWatch"
+        android:id="@+id/macvalue"
+        android:textColor="#0d3481"
+        android:textSize="20dp" />
+        </TableRow>
+
+        <ImageView
+            android:id="@+id/divider1"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="2dp"
+            android:layout_marginBottom="1dp"
+            android:background="@color/Header"
+            />
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/macvolumeimg"
+        android:background="@drawable/ic_volume"
+        android:layout_below="@+id/macvalueimg"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp"/>
+
+        <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="MAC Volume"
+        android:layout_alignLeft="@+id/macvolumeimg"
+        android:layout_marginLeft="10dp"
+        android:layout_below="@+id/macvalue"
+        android:layout_marginTop="25dp"
+        android:onClick="MarketWatch"
+        android:id="@+id/macvolume"
+        android:textColor="#0d3481"
+        android:textSize="20dp" />
+
+        </TableRow>
+
+        <ImageView
+            android:id="@+id/divider2"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="2dp"
+            android:layout_marginBottom="1dp"
+            android:background="@color/Header"
+            />
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/topgainimg"
+        android:background="@drawable/ic_high"
+        android:layout_below="@+id/macvolumeimg"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Top Gainers"
+        android:layout_alignLeft="@+id/macvolumeimg"
+        android:layout_marginLeft="10dp"
+        android:layout_below="@+id/macvolume"
+        android:layout_marginTop="28dp"
+        android:onClick="MarketWatch"
+        android:id="@+id/topgain"
+        android:textColor="#0d3481"
+        android:textSize="20dp" />
+        </TableRow>
+
+        <ImageView
+            android:id="@+id/divider3"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="2dp"
+            android:layout_marginBottom="1dp"
+            android:background="@color/Header"
+            />
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/toploseimg"
+        android:background="@drawable/ic_low"
+        android:layout_below="@+id/topgainimg"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp"
+        android:onClick="MarketWatch"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Top Losers"
+        android:layout_alignLeft="@+id/macvolumeimg"
+        android:layout_marginLeft="10dp"
+        android:layout_below="@+id/topgain"
+        android:layout_marginTop="25dp"
+        android:id="@+id/toplose"
+        android:textColor="#0d3481"
+        android:textSize="20dp"
+        android:onClick="MarketWatch"/>
+</TableRow>
+
+        <ImageView
+            android:id="@+id/divider4"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="2dp"
+            android:layout_marginBottom="1dp"
+            android:background="@color/Header"
+            />
+
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/Graphsimg"
+        android:background="@drawable/ic_graphs"
+        android:layout_below="@+id/toplose"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Graphs"
+        android:layout_alignLeft="@+id/Graphsimg"
+        android:layout_marginLeft="10dp"
+        android:layout_below="@+id/toplose"
+        android:layout_marginTop="20dp"
+        android:id="@+id/Graphs"
+        android:textColor="#0d3481"
+        android:textSize="20dp"
+        android:onClick="MarketWatch"/>
+</TableRow>
+
+        <ImageView
+            android:id="@+id/divider5"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="2dp"
+            android:layout_marginBottom="1dp"
+            android:background="@color/Header"
+            />
+
+
+
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/BhavCopyimg"
+        android:background="@drawable/ic_bhavcopy"
+        android:layout_below="@+id/Graphsimg"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="BhavCopy"
+        android:layout_alignLeft="@+id/BhavCopyimg"
+        android:layout_marginLeft="10dp"
+        android:layout_below="@+id/Graphs"
+        android:layout_marginTop="25dp"
+        android:id="@+id/BhavCopy"
+        android:textColor="#0d3481"
+        android:textSize="20dp"
+        android:onClick="MarketWatch"/>
+        </TableRow>
+
+
+        <ImageView
+            android:id="@+id/divider6"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="2dp"
+            android:layout_marginBottom="1dp"
+            android:background="@color/Header"
+            />
+
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/Scriptdetimg"
+        android:background="@drawable/ic_scriptdet"
+        android:layout_below="@+id/BhavCopyimg"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Scriptdet"
+        android:layout_alignLeft="@+id/Scriptdetimg"
+        android:layout_marginLeft="10dp"
+        android:layout_below="@+id/BhavCopy"
+        android:layout_marginTop="25dp"
+        android:id="@+id/scriptdet"
+        android:textColor="#0d3481"
+        android:textSize="20dp"
+        android:onClick="MarketWatch"/>
+
+        </TableRow>
+
+        <ImageView
+            android:id="@+id/divider7"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="2dp"
+            android:layout_marginBottom="1dp"
+            android:background="@color/Header"
+            />
+
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/Aboutusimg"
+        android:background="@drawable/ic_about"
+        android:layout_below="@+id/Scriptdetimg"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="AboutUs"
+        android:layout_alignLeft="@+id/Aboutusimg"
+        android:layout_marginLeft="10dp"
+        android:layout_below="@+id/scripdet"
+        android:layout_marginTop="25dp"
+        android:id="@+id/aboutUs"
+        android:textColor="#0d3481"
+        android:textSize="20dp"
+        android:onClick="MarketWatch"/>
+        </TableRow>
+
+
+        <ImageView
+            android:id="@+id/divider8"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="2dp"
+            android:layout_marginBottom="1dp"
+            android:background="@color/Header"
+            />
+
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/Contactusimg"
+        android:background="@drawable/ic_contactus"
+        android:layout_below="@+id/Aboutusimg"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ContactUs"
+        android:layout_alignLeft="@+id/Contactusimg"
+        android:layout_marginLeft="10dp"
+        android:layout_below="@+id/aboutUs"
+        android:layout_marginTop="25dp"
+        android:id="@+id/Contactus"
+        android:textColor="#0d3481"
+        android:textSize="20dp"
+        android:onClick="MarketWatch"/>
+        </TableRow>
+
+    </TableLayout>
+
+   </RelativeLayout>

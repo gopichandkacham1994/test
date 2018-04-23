@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="mcxf_androidcom.com.mcx_android.MostActiveContractVolume.MostActivityVolume_Details"
+    tools:showIn="@layout/activity_most_activity_volume__details"
+    android:background="@drawable/button_style">
+
+
+        <TableLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:stretchColumns="*"
+            android:id="@+id/tablelayout">
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tablerow0"
+                    android:background="@drawable/bhavcopy">
+
+                        <TextView
+                            android:layout_width="160dp"
+                            android:layout_height="wrap_content"
+                            android:text="MAC VOLUME"
+                            android:textStyle="bold|italic"
+                            android:paddingStart="20dp"
+                            android:textSize="20sp"
+                            android:textColor="#ffff"
+                            android:padding="10dp"/>
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tablerow1"
+                    android:background="@color/Header">
+
+                        <TextView
+                            android:layout_width="100dp"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/Product"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginBottom="10dp"
+                            android:text="Symbol"
+                            android:textColor="#fff"
+                            android:textStyle="bold"
+                            android:gravity="left"
+                            android:paddingStart="30dp"/>
+
+                        <TextView
+                            android:layout_width="100dp"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/Expiry"
+                            android:text="@string/Expiry"
+                            android:textStyle="bold"
+                            android:layout_weight="1"
+                            android:gravity="left"
+                            android:layout_marginStart="-25dp"
+                            android:textColor="#fff"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginBottom="10dp"/>
+
+                        <TextView
+                            android:layout_width="100dp"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/PQU"
+                            android:textColor="#fff"
+                            android:layout_weight="1"
+                            android:text="@string/Volume"
+                            android:textStyle="bold"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginBottom="10dp"
+                            android:gravity="center"/>
+
+                        <TextView
+                            android:layout_width="100dp"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/LTP"
+                            android:textColor="#fff"
+                            android:layout_weight="1"
+                            android:text="@string/LTP"
+                            android:textStyle="bold"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginBottom="10dp"
+                            android:gravity="center"/>
+
+                </TableRow>
+        </TableLayout>
+
+
+        <ListView
+            android:id="@+id/list"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_below="@+id/tablelayout"
+            android:isScrollContainer="false"
+            android:layout_marginStart="5dp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp">
+
+        </ListView>
+
+</RelativeLayout>
